@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+
+--Grayish-blue: hsl(233, 8%, 79%);
+--Dark-grayish-blue: hsl(236, 13%, 42%);
+--Soft-red: hsl(5, 85%, 63%);
+--Soft-orange: hsl(35, 77%, 62%);
+--Off-white: hsl(36, 100%, 99%);
+--Very-dark-blue: hsl(240, 100%, 5%);
+}
+body{
+    font-family: "Inter";
+}
+header{
+    animation: 1s ease-in .5s sildeU-B;
+}
+ul a{
+    color:var(--Dark-grayish-blue);
+    transition: 0.3s color ease-in;
+}
+.links ul a:hover{
+    color: var(--Soft-orange);
+}
+.heading{
+    color: var(--Soft-orange);
+}
+.aside{
+    background-color: var(--Very-dark-blue);
+    animation: 1s ease-in .5s slideR-L;
+}
+
+.num{
+    color: var(--Grayish-blue);
+
+}
+img{
+    animation: 1s ease-in .5s maintext;
+}
+
+.content a:hover{
+    color: var(--Soft-red);
+  }
+  .content a{
+    color: var(--Very-dark-blue);
+    transition: .2s color ease-out;
+  }
+
+  article a{
+    transition:color 0.5s ease;
+    color: var(--Off-white);
+  }
+  article a:hover{
+    color: var(--Soft-orange);
+  }
+ 
+
+  
+  .button{
+    background-color:hsl(5, 85%, 63%) ;
+    letter-spacing: 0.25em;
+    transition:background-color 0.5s ease-out;
+}
+.button:hover{
+  background-color: var(--Very-dark-blue);
+}
+
+.bottom{
+    animation: 1.2s ease-in .5s slideB-U;
+}
+
+  
+@keyframes slideR-L{
+    0%{
+        transform:translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+   }
+
+@keyframes sildeU-B {
+    0%{
+        transform:translateY(-100px);
+        opacity: 0 ;
+    }
+    100%{
+        transform : translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideB-U {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes maintext{
+    0%{
+        transform: scale(2, 2);;
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1, 1);;
+        opacity: 1;
+    }
+    }
